@@ -1,0 +1,7 @@
+setwd("//cdc.gov/private/M329/yno1/Document/Data science course/Exploratory data analysis/Project 1")
+
+data<-read.table("household_power_consumption.txt",header=TRUE,sep=";",na="?")
+
+subdata<-data[data$Date %in% c("1/2/2007","2/2/2007") ,]
+dim(subdata)
+
